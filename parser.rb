@@ -32,4 +32,6 @@ loop do
     )
   end
 
+  sleep 1800
+
 end
