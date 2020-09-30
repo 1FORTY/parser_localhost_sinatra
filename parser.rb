@@ -6,11 +6,11 @@ require 'mechanize'
 require 'json'
 
 url = 'http://localhost:4567/'
-html = open(url)
-
-doc = Nokogiri::HTML(html)
 
 loop do
+
+  html = open(url)
+  doc = Nokogiri::HTML(html)
 
   doc.css('.data').each do |document|
 
